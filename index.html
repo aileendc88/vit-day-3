@@ -5,20 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./styles.css">
   <title>Veterans in Technology - Day 3 - CSS</title>
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-  <div>
-    <h1>
-      Welcome Veterans to Day 3.
-    </h1>
-    <p>
-      Introduction to Cascading Style Sheets (CSS)
-    </p>
-  </div>
-
   <!-- Activity: Build your own web page with styles -->
   <!-- Start with forking this repository -->
 
@@ -49,6 +42,157 @@
      2.Use CSS animation for awesome transitions in colors or size
      3. Create a grid of images that align 4x2 (4 images across with 2 rows, a total of 8 images)
     -->
+    <div class="main-container">
+
+      <!--HEADER/NAVIGATION-->
+      <header class="header-container">
+        <div class="logo-container">
+          <img src="https://static.thenounproject.com/png/733806-200.png" height="70" width="70" alt="map icon of phils">
+          <p>Travel<br><span>Philippines</span></p>
+        </div>
+       <nav>
+        <ul class="navigation">
+          <li><a class="nav-links" href="#explore">Where to Go</a></li>
+          <li><a class="nav-links" href="#newsletter">Newsletter</a></li>
+          <li><a class="nav-links" href="#">Blog</a></li>
+        </ul>
+       </nav>
+      </header>
+
+      <!--HERO BANNER-->
+      <div class="hero-container">
+        <h1 id="hero-txt">Philippines</h1>
+      </div>
+
+      <!--SECTION 1 - WHY YOU'LL LOVE THE PHILIPPINES-->
+      <section class="section-container">
+        <h2>Why you'll love the Philippines</h2>
+        <div class="reasons-container">
+          <div class="reasons-block">
+            <img src="https://static.thenounproject.com/png/901716-200.png" height="100" width="100" alt="">
+            <h6>Thousands of inviting islands</h6>
+          </div>
+          <div class="reasons-block">
+            <img src="https://static.thenounproject.com/png/1565074-200.png" height="100" width="100" alt="">
+            <h6>World heritage landscapes</h6>  
+          </div>
+          <div class="reasons-block">
+            <img src="https://static.thenounproject.com/png/1429979-200.png" height="100" width="100" alt="">
+            <h6>Colorful festivals</h6>
+          </div>
+        </div>
+      </section>
+
+      <!--ASIDE - TRAVEL TIPS-->
+      <aside class="aside-container">
+          <h3 id="tips-txt">Travel Tips</h3>
+          <div class="tips-card">
+            <div>
+              <a href="https://www.adventureinyou.com/philippines/top-philippine-mountains/" target="_blank"><img src="https://www.adventureinyou.com/wp-content/uploads/2014/01/philippines-mayon-768x512.jpg" alt="" height="200" width="300"></a>
+            </div>
+            <h6>Tip #1</h6>
+            <p>Some text about the tip</p>
+          </div>
+          <div class="tips-card">
+              <div>
+                <a href="https://www.adventureinyou.com/philippines/moalboal-diving/" target="_blank"><img src="https://www.adventureinyou.com/wp-content/uploads/2015/04/moal-boal-lead-768x512.jpg" height="200" width="300" alt=""></a>
+              </div>
+              <h6>Tip #1</h6>
+              <p>Some text about the tip</p>
+            </div>
+            <div class="tips-card">
+                <div>
+                  <a href="https://www.adventureinyou.com/philippines/best-places-to-stay-in-bohol/" target="_blank"><img src="https://www.adventureinyou.com/wp-content/uploads/2016/10/bohol-768x512.jpg" height="200" width="300" alt=""></a>
+                </div>
+                <h6>Tip #1</h6>
+                <p>Some text about the tip</p>
+              </div>
+            <div>
+              <button id="tips-btn">See all tips</button>
+            </div>
+        </aside>
+
+      <!--SECTION 2 - WHERE TO GO-->
+      <section class="section-container" id="explore">
+        <h2>Explore</h2>
+        <p>Plan your next adventure</p>
+        <div class="gallery-container row-1">
+          <div class="gallery">
+            <a target="_blank" href="#">
+              <img class="overlay" src="https://i.ytimg.com/vi/gKkEVH5Es_g/maxresdefault.jpg" alt="Mountains" width="150" height="150">
+            </a>
+            <div class="desc"><h6>Banawe Rice Terraces</h6></div>
+          </div>
+          <div class="gallery">
+            <a target="_blank" href="#">
+              <img src="https://i.ytimg.com/vi/gKkEVH5Es_g/maxresdefault.jpg" alt="Mountains" width="150" height="150">
+            </a>
+            <div class="desc"><h6>Banawe Rice Terraces</h6></div>
+          </div>
+          <div class="gallery">
+            <a target="_blank" href="#">
+              <img src="https://i.ytimg.com/vi/gKkEVH5Es_g/maxresdefault.jpg" alt="Mountains" width="150" height="150">
+            </a>
+            <div class="desc"><h6>Banawe Rice Terraces</h6></div>
+          </div>
+          <div class="gallery">
+            <a target="_blank" href="#">
+              <img src="https://i.ytimg.com/vi/gKkEVH5Es_g/maxresdefault.jpg" alt="Mountains" width="150" height="150">
+            </a>
+            <div class="desc"><h6>Banawe Rice Terraces</h6></div>
+          </div>  
+        </div>
+        <div class="gallery-container row-1">
+            <div class="gallery">
+              <a target="_blank" href="#">
+                <img  src="https://i.ytimg.com/vi/gKkEVH5Es_g/maxresdefault.jpg" alt="Mountains" width="150" height="150">
+              </a>
+              <div class="desc"><h6>Banawe Rice Terraces</h6></div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="#">
+                <img src="https://i.ytimg.com/vi/gKkEVH5Es_g/maxresdefault.jpg" alt="Mountains" width="150" height="150">
+              </a>
+              <div class="desc"><h6>Banawe Rice Terraces</h6></div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="#">
+                <img src="https://i.ytimg.com/vi/gKkEVH5Es_g/maxresdefault.jpg" alt="Mountains" width="150" height="150">
+              </a>
+              <div class="desc"><h6>Banawe Rice Terraces</h6></div>
+            </div>
+            <div class="gallery">
+              <a target="_blank" href="#">
+                <img src="https://i.ytimg.com/vi/gKkEVH5Es_g/maxresdefault.jpg" alt="Mountains" width="150" height="150">
+              </a>
+              <div class="desc"><h6>Banawe Rice Terraces</h6></div>
+            </div>  
+          </div>
+      </section>
+
+      <!--SECTION 3 - FORM-->
+      <section class="section-container" id="newsletter">
+        <h2>Adventure in your inbox</h2>
+        <p>Want more travel tips delivered straight to your inbox?</p>
+        <p>Sign up below for monthly Philippines inspiration.</p>
+        <form class="form-container">
+          <div><input id="name" type="text" name="name" placeholder="Enter your name" required></div>   
+          <div><input id="email" type="email" name="email" placeholder="Enter your email address" required></div>
+          <input id="submit" class="btn" type="submit" value="SIGN ME UP!">
+        </form>
+      </section>
+
+      
+      <footer class="footer">
+        <ul class="social-icons-container">
+          <li><a class="social-icons" href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a class="social-icons" href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a class="social-icons" href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+        </ul>
+      </footer>
+    </div>
+
+
 </body>
 
 </html>
